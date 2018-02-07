@@ -1,6 +1,8 @@
 import {app} from './consts';
 
+import { second } from './demo1';
 
 app.get('/', (req, res) => {
-  res.send('Hello world node.js es6 app.');
+  const result2 = second('AHOJ SERVER', 999)
+  res.send(result2);
 });
